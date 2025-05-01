@@ -1,0 +1,48 @@
+@use "../../app/App.scss" as *;
+
+.back{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent {
+    position: relative;
+    min-width: 400px;
+    height: 22vh;
+    padding: 16px;
+    background-color: var(--background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}

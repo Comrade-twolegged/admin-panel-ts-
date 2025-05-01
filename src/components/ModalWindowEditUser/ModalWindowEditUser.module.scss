@@ -1,0 +1,55 @@
+@use "../../app/App.scss" as *;
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.modalContent {
+    position: relative;
+    min-width: 550px;
+    height: 40vh;
+    padding: 16px;
+    background-color: var(--background);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+}
+
+.formBlock{
+    display: flex;
+    flex-direction: column;
+
+    label{
+        margin-left: 10px;
+    }
+}
+
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    input{
+        width: 520px;
+    }
+}
+
+.back{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}

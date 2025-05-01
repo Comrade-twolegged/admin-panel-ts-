@@ -1,0 +1,18 @@
+@use "../../app/App.scss" as *;
+
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 550;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.blue{
+    background-color: var(--accent-a);
+}
+
+.red{
+    background-color: #e44949; 
+}

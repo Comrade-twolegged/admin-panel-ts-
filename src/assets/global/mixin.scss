@@ -1,0 +1,29 @@
+@mixin fluid-text($min-size, $max-size) {
+    font-size: clamp($min-size, 2vw, $max-size);
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint ==phone {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==tablet { 
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==small-desktop {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint ==desktop {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use "../../app/App.scss" as *;
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    td {
+        padding: 12px 16px;
+        border: 1px solid var(--placeholder);
+    }
+}
+
+.titleTable {
+    background-color: var(--accent-b);
+    color: var(--white);
+    font-weight: bold;
+    text-align: left;
+}
+

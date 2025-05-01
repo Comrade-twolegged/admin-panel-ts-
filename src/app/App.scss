@@ -1,0 +1,6 @@
+@use "../assets/theme/dark.scss" as *;
+@use "../assets/theme/light.scss" as *;
+
+body {
+    transition: all 0.3s ease;
+}
